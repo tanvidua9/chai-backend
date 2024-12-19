@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js"
-  },
+    "start": "node -r dotenv/config src/index.js",  
+    "dev": "nodemon -r dotenv/config src/index.js" 
+}
+,
   "keywords": [
     "javascript",
     "backend"
@@ -16,5 +18,10 @@
   "devDependencies": {
     "nodemon": "^3.1.9",
     "prettier": "^3.4.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.1"
   }
 }
